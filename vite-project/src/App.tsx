@@ -64,7 +64,7 @@ function Header(){
 function Footer(){
   return(
     <>
-      <footer>We are open till 10 p.m</footer>
+      <footer>{new Date().toLocaleTimeString()}We are open till 10 p.m</footer>
     </>
   )
 }
