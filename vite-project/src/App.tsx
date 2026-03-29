@@ -62,9 +62,13 @@ function Header(){
 }
 
 function Footer(){
+  const hour = new Date().getHours();
+  const openHours = 12;
+  const closeHours = 22;
   return(
     <>
       <footer>{new Date().toLocaleTimeString()}We are open till 10 p.m</footer>
+      <p>{hour>=openHours && hour<=closeHours?'We are conrently open':'We are curently closed'}</p>
     </>
   )
 }
