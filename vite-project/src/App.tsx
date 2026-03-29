@@ -40,11 +40,45 @@ const pizzaData = [
     ingredients: "Tomato, mozarella, ham, aragula, and burrata cheese",
     price: 18,
     photoName: "pizzas/prosciutto.jpg",
-    soldOut: false,
+    soldOut: false
   },
 ];
+
+function Header(){
+  return(
+    <div>
+      <p>Fast react pizza co.</p>
+    </div>
+  )
+}
+function Menu(){
+  return(
+    <div>
+
+    </div>
+  )
+}
+
+function Footer(){
+  return(
+    <div>
+      <footer>We are open till 10 p.m</footer>
+    </div>
+  )
+}
+
+function Pizza(){
   return (
     <div>
+      <img src = "/public/focaccia.jpg" alt = "Pizza focotia"/>
+      <p>Pizza Focatia</p>
+      <p>Tomato,mozarella,tortilla</p>
+    </div>
+  )
+}
+  return (
+    <div>
+      <Pizza/>
     </div>
   )
 }
