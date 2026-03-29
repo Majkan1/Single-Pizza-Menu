@@ -68,7 +68,7 @@ function Footer(){
   return(
     <>
       <footer>{new Date().toLocaleTimeString()}We are open till 10 p.m</footer>
-      {hour>=openHours && hour<=closeHours?alert('We are conrently open'):alert('We are curently closed')}
+      {hour>=openHours && hour<=closeHours?<p>('We are conrently open')</p>:<p>('We are curently closed')</p>}
     </>
   )
 }
