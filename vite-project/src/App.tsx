@@ -72,7 +72,7 @@ function Footer(){
 function Pizza(){
   return (
     <div>
-      <img src = "/focaccia.jpg" alt = "Pizza focotia"/>
+      <img src = {`${import.meta.env.BASE_URL}focaccia.jpg`} alt = "Pizza focotia"/>
       <p>Pizza Focatia</p>
       <p>Tomato,mozarella,tortilla</p>
     </div>
