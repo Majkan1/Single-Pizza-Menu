@@ -1,6 +1,6 @@
 # 🍕 Fast React Pizza Co.
 
-A lightweight React + TypeScript pizza menu app built as a frontend learning project. Displays a static menu of Italian pizzas with real-time open/closed status based on the current hour.
+A lightweight React + TypeScript pizza menu app built. Displays a static menu of Italian pizzas with real-time open/closed status based on the current hour.
 
 ---
 
@@ -84,7 +84,7 @@ npm run build
 
 ## Known Issues / Planned Improvements
 
-- [ ] `Footer` uses `alert()` — replace with a UI banner component
+- [ ] `Footer` uses `p` — replace with a UI banner component
 - [ ] `Pizza` component is hardcoded — connect it to `pizzaData`
 - [ ] Menu only shows pizza names — add image, ingredients, price, sold-out badge
 - [ ] Add Tailwind styling to all components
@@ -94,5 +94,4 @@ npm run build
 
 ## Author
 
-Built by Mikołaj Michalak as part of a React + TypeScript learning path.
-GitHub: [github.com/Majkan1](https://github.com/Majkan1)
+Built by Mikołaj Michalak using React + Typescript.
