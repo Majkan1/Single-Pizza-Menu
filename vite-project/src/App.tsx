@@ -79,7 +79,15 @@ function Menu({pizza}:MenuProps){
   return(
     <div>
       {pizza.map((item,index)=>(
-        <p key = {index}>{item.name},{item.photoName},{item.price},{item.soldOut}</p>
+        <div key = {index}>
+          <img
+            src = {`${import.meta.env.BASE_URL}${item.photoName.replace(/^\//, "")}`}
+            alt = {item.name}
+          />
+          <p>{item.name}</p>
+          <p>{item.ingredients}</p>
+          <p>{item.price}</p>
+        </div>
       ))}
     </div>
   )
