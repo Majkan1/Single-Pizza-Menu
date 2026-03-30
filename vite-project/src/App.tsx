@@ -68,22 +68,20 @@ function Header(){
 }
 
 function Footer(){
-  const hour = new Date().getHours();
+  //const hour = new Date().getHours();
   const openHours = 12;
   const closeHours = 22;
   return(
     <>
-      <footer>{new Date().toLocaleTimeString()}We are open till 10 p.m</footer>
-      {hour>=openHours && hour<=closeHours?
-      <p>('We are conrently open')</p>:
-      <p>('We are curently closed')</p>}
+    <p>We are currnetly open from {openHours} to {closeHours}. Come and visit us</p>
+    <button className="bg-yellow-300 rounded-lg w-24 h-auto">Order</button>
     </>
   )
 }
 
 function Menu({pizza}:MenuProps){
   return(
-    <div>
+    <div className="w-full max-w-3xl">
       <div className="flex justify-center items-center">
         <p className="relative font-bold text-xl m-2.5 p-2">
           <span className="absolute left-0 -top-1 h-px w-full bg-[#c89a2b]" />
@@ -91,10 +89,10 @@ function Menu({pizza}:MenuProps){
           <span className="absolute left-0 -bottom-1 h-px w-full bg-[#c89a2b]" />
         </p>
       </div>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 gap-6 p-2 place-items-start">
         {pizza.map((item,index)=>(
-        <div key = {index} >
-          <div className="flex">
+        <div key = {index} className="w-full">
+          <div className="flex items-start">
             <div>
               <img className="w-24"
                 src = {`${import.meta.env.BASE_URL}${item.photoName.replace(/^\//, "")}`}
