@@ -55,9 +55,15 @@ const pizzaData:SinglePizzaData[] = [
 
 function Header(){
   return(
-    <div>
-      <p className="text-red-600 text-5xl uppercase">Fast react pizza co.</p>
-    </div>
+    <header className="mt-10 text-center">
+      <div className="flex items-center justify-center gap-6 text-[#c89a2b]">
+        <span className="h-px w-16 bg-[#c89a2b]" />
+        <h1 className="font-display text-2xl sm:text-3xl tracking-[0.35em] uppercase">
+          Fast React Pizza Co.
+        </h1>
+        <span className="h-px w-16 bg-[#c89a2b]" />
+      </div>
+    </header>
   )
 }
 
@@ -96,7 +102,7 @@ function Menu({pizza}:MenuProps){
 function App() {
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="min-h-screen w-full px-6 flex flex-col items-center font-body">
       <Header/>
       <Menu pizza = {pizzaData}/>
       <Footer/>
