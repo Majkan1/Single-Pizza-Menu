@@ -84,6 +84,7 @@ function Footer(){
 function Menu({pizza}:MenuProps){
   return(
     <div>
+      <p className="font-bold underline underline-offset-2 flex justify-center m-2.5">Our menu</p>
       {pizza.map((item,index)=>(
         <div key = {index}>
           <img
