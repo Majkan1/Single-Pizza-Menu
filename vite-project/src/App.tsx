@@ -75,16 +75,6 @@ function Footer(){
   )
 }
 
-function Pizza(){
-  return (
-    <div>
-      <img src = {`${import.meta.env.BASE_URL}focaccia.jpg`} alt = "Pizza focotia"/>
-      <p>Pizza Focatia</p>
-      <p>Tomato,mozarella,tortilla</p>
-    </div>
-  )
-}
-
 function Menu({pizza}:MenuProps){
   return(
     <div>
@@ -99,7 +89,6 @@ function App() {
 
   return (
     <div>
-      <Pizza />
       <Header/>
       <Menu pizza = {pizzaData}/>
       <Footer/>
