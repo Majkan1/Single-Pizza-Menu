@@ -103,6 +103,7 @@ function Menu({pizza}:MenuProps){
               <p className="m-3">{item.name}</p>
               <p className="m-3">{item.ingredients}</p>
               <p className="m-3">{item.price}</p>
+              <p className="m-3">{item.soldOut===true?'sold out':''}</p>
             </div>
           </div>
         </div>
