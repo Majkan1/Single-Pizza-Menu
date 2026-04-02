@@ -92,7 +92,7 @@ function Menu({pizza}:MenuProps){
       <div className="grid grid-cols-2 gap-6 p-2 place-items-start">
         {pizza.map((item,index)=>(
         <div key = {index} className="w-full">
-          <div className="flex items-start">
+          <div className="flex items-start gap-6">
             <div>
               <img className={`m-3 ${item.soldOut?"grayscale opacity-50":""}`}
                 src = {`${import.meta.env.BASE_URL}${item.photoName.replace(/^\//, "")}`}
