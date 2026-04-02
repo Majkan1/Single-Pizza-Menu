@@ -94,7 +94,7 @@ function Menu({pizza}:MenuProps){
         <div key = {index} className="w-full">
           <div className="flex items-start">
             <div>
-              <img className="w-24"
+              <img className={`m-3 ${item.soldOut?"grayscale opacity-50":""}`}
                 src = {`${import.meta.env.BASE_URL}${item.photoName.replace(/^\//, "")}`}
                 alt = {item.name}
               />
