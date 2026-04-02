@@ -69,7 +69,7 @@ function Header(){
 
 function Footer(){
   //const hour = new Date().getHours();
-  const openHours = 12;
+  const openHours = 10;
   const closeHours = 22;
   return(
     <>
